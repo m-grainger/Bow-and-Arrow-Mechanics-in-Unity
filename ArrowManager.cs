@@ -5,20 +5,12 @@ using UnityEngine;
 public class ArrowManager : MonoBehaviour {
 
 	public SteamVR_TrackedObject trackedObj;
-
 	private GameObject currentArrow;
-
 	public GameObject arrowPrefab;
-
 	public GameObject stringAttachPoint;
 	public GameObject arrowStartPoint;
 	public GameObject stringStartPoint;
-
 	private bool isAttached = false;
-
-	//singleton programming method:
-	//create a static instance to gaurantee at MOST one of these
-	//objects in the scene at once
 
 	public static ArrowManager Instance;
 
@@ -34,11 +26,6 @@ public class ArrowManager : MonoBehaviour {
 			Instance = null;
 	}
 
-	//end singleton programming method
-
-
-
-	// Use this for initialization
 	void Start () 
 	{
 		
