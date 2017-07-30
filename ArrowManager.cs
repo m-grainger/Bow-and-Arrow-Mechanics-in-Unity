@@ -87,7 +87,6 @@ public class ArrowManager : MonoBehaviour {
 		}
 	}
 
-
 	public void AttachBowToArrow() 
 	{
 		currentArrow.transform.parent = stringAttachPoint.transform;
